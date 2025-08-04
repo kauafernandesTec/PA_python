@@ -1,0 +1,185 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOVOBXbhG8nkKv4wiC5jYVq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kauafernandesTec/PA_python/blob/main/Exerc%C3%ADcios_String.ipynb/Aula_PA_1C\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "spXQXfdOZUV3",
+        "outputId": "1d644ae8-4272-4ab8-bca2-6943dbe33439"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "11\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 1 - Use o método len para imprimir o comprimento da string.\n",
+        "x = \"Hello World\"\n",
+        "print(len(x))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2 - Obtenha o primeiro caractere da string txt.\n",
+        "txt = \"Hello World\"\n",
+        "x = txt[0]\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "urGuW4WDg5UH",
+        "outputId": "8cd988af-6046-4eda-e7ac-f91171c8ce98"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "H\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 3 - Obtenha os caracteres do índice 2 ao índice 4 ( llo).\n",
+        "txt = \"Hello World\"\n",
+        "x = txt[2:5]\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XIru3xBzhFM5",
+        "outputId": "34507ed2-1071-4fad-e8af-146c02b14784"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "llo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 4 -  Converta o valor de txt para maiúsculas.\n",
+        "txt = \"Hello World\"\n",
+        "txt = txt.upper()\n",
+        "print(txt)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qzTbYLqDhQ2D",
+        "outputId": "612d6f08-4b81-4048-a630-3be2e3e6896a"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "HELLO WORLD\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 5 -  Conte quantas vezes aparece a palavra \"de\" na string abaixo\n",
+        "txt = \"Eu gosto de vijar, tomar vinho, de estudar estudar programação, de estudar Pyhon\"\n",
+        "x = txt.count(\"de\")\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7O9gCHTQhcvP",
+        "outputId": "5bb2c3dd-1d17-4af8-d774-8796e7e8fa9a"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 6 - Separe a frase abaixo toda vez que encontrar um vírgula\n",
+        "txt = \"Eu gosto de vijar, tomar vinho, de estudar estudar programação, de estudar Pyhon\"\n",
+        "x = txt.split(\",\")\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4NqXpL1JhlVl",
+        "outputId": "be2735fe-3175-44b0-9be8-b29677c7f531"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Eu gosto de vijar', ' tomar vinho', ' de estudar estudar programação', ' de estudar Pyhon']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
